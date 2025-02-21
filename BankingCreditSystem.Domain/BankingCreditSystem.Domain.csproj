@@ -10,4 +10,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BankingCreditSystem.Core\BankingCreditSystem.Core.csproj" />
+  </ItemGroup>
+
 </Project>
