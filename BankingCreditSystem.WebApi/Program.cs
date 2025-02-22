@@ -1,5 +1,12 @@
+using BankingCreditSystem.Application;
+using BankingCreditSystem.Persistence;
 using BankingCreditSystem.Core.CrossCuttingConcerns.Exceptions.Handlers;
 using BankingCreditSystem.Core.CrossCuttingConcerns.Exceptions.Middlewares;
+using BankingCreditSystem.Application.Features.IndividualCustomers.Profiles;
+using BankingCreditSystem.Application.Features.IndividualCustomers.Rules;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerUI;
+using BankingCreditSystem.Application.Features.IndividualCustomers.Commands.Create;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +14,28 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+// Configure Swagger
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Banking Credit System API", Version = "v1" });
+});
+
+// Add Application Services
+builder.Services.AddApplicationServices();
+
+// Add Persistence Services
+builder.Services.AddPersistenceServices(builder.Configuration);
+
+// Add AutoMapper
+builder.Services.AddAutoMapper(typeof(MappingProfiles));
+
+// Add MediatR
+builder.Services.AddMediatR(cfg => 
+    cfg.RegisterServicesFromAssembly(typeof(CreateIndividualCustomerCommand).Assembly));
+
+// Add Business Rules
+builder.Services.AddScoped<IndividualCustomerBusinessRules>();
 
 // Add services
 builder.Services.AddScoped<IHttpExceptionHandler, HttpExceptionHandler>();
@@ -18,7 +46,10 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Banking Credit System API V1");
+    });
 }
 
 // Add middleware (before routing/endpoints)
