@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 using BankingCreditSystem.Core.CrossCuttingConcerns.Exceptions.Handlers;
 
 namespace BankingCreditSystem.Core.CrossCuttingConcerns.Exceptions.Middlewares;

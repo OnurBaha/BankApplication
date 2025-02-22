@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BankingCreditSystem.Core.CrossCuttingConcerns.Exceptions.HttpProblemDetails;
 
-public class ValidationProblemDetails : ProblemDetails
+public class CustomValidationProblemDetails : ProblemDetails
 {
     public IEnumerable<ValidationFailureDetails> Errors { get; init; }
 
-    public ValidationProblemDetails(IEnumerable<ValidationFailureDetails> errors)
+    public CustomValidationProblemDetails(IEnumerable<ValidationFailureDetails> errors)
     {
         Title = "Validation error(s)";
         Detail = "One or more validation errors occurred.";
@@ -19,6 +19,6 @@ public class ValidationProblemDetails : ProblemDetails
 
 public class ValidationFailureDetails
 {
-    public string Property { get; init; }
-    public string Error { get; init; }
+    public string Property { get; init; } = string.Empty;
+    public string Error { get; init; } = string.Empty;
 } 

@@ -5,14 +5,14 @@ using BankingCreditSystem.Core.CrossCuttingConcerns.Exceptions.Types;
 
 namespace BankingCreditSystem.Core.CrossCuttingConcerns.Exceptions.Handlers;
 
-public class HttpExceptionHandler : ExceptionHandler
+public class HttpExceptionHandler : ExceptionHandler, IHttpExceptionHandler
 {
     protected override ProblemDetails HandleException(Exception exception)
     {
         ProblemDetails problemDetails = exception switch
         {
             BusinessException businessException => new BusinessProblemDetails(businessException.Message),
-            ValidationException validationException => new ValidationProblemDetails(
+            ValidationException validationException => new CustomValidationProblemDetails(
                 validationException.Errors.Select(error => new ValidationFailureDetails
                 {
                     Property = error.PropertyName,
