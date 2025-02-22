@@ -50,3 +50,4 @@ C:\Users\kocon\source\repos\Cursor\BankApp\BankingCreditSystem.WebApi\bin\Debug\
 C:\Users\kocon\source\repos\Cursor\BankApp\BankingCreditSystem.WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\kocon\source\repos\Cursor\BankApp\BankingCreditSystem.WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\kocon\source\repos\Cursor\BankApp\BankingCreditSystem.WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\kocon\source\repos\Cursor\BankApp\BankingCreditSystem.WebApi\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
