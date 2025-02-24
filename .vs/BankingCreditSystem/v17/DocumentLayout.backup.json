@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kocon\\source\\repos\\Cursor\\BankApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66601654-55B8-46A0-8338-A505ECDBD5FC}|BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|c:\\users\\kocon\\source\\repos\\cursor\\bankapp\\bankingcreditsystem.persistence\\migrations\\20250223212511_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66601654-55B8-46A0-8338-A505ECDBD5FC}|BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj|solutionrelative:bankingcreditsystem.persistence\\migrations\\20250223212511_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E17C9B74-8C5F-4203-AE0F-D3CC5B1BB23B}|BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|c:\\users\\kocon\\source\\repos\\cursor\\bankapp\\bankingcreditsystem.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E17C9B74-8C5F-4203-AE0F-D3CC5B1BB23B}|BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|solutionrelative:bankingcreditsystem.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250223212511_init.cs",
+              "DocumentMoniker": "C:\\Users\\kocon\\source\\repos\\Cursor\\BankApp\\BankingCreditSystem.Persistence\\Migrations\\20250223212511_init.cs",
+              "RelativeDocumentMoniker": "BankingCreditSystem.Persistence\\Migrations\\20250223212511_init.cs",
+              "ToolTip": "C:\\Users\\kocon\\source\\repos\\Cursor\\BankApp\\BankingCreditSystem.Persistence\\Migrations\\20250223212511_init.cs",
+              "RelativeToolTip": "BankingCreditSystem.Persistence\\Migrations\\20250223212511_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T21:25:11.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kocon\\source\\repos\\Cursor\\BankApp\\BankingCreditSystem.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "BankingCreditSystem.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\kocon\\source\\repos\\Cursor\\BankApp\\BankingCreditSystem.WebApi\\Program.cs",
+              "RelativeToolTip": "BankingCreditSystem.WebApi\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAD4vyIAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T17:05:28.404Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
