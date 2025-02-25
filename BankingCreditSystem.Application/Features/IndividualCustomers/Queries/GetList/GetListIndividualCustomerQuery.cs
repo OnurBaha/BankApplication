@@ -2,7 +2,6 @@ using AutoMapper;
 using MediatR;
 using BankingCreditSystem.Application.Features.IndividualCustomers.Dtos.Responses;
 using BankingCreditSystem.Application.Services.Repositories;
-using BankingCreditSystem.Core.Repositories;
 
 namespace BankingCreditSystem.Application.Features.IndividualCustomers.Queries.GetList;
 

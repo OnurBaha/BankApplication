@@ -1,7 +1,6 @@
 using AutoMapper;
 using BankingCreditSystem.Application.Features.CorporateCustomers.Dtos.Requests;
 using BankingCreditSystem.Application.Features.CorporateCustomers.Dtos.Responses;
-using BankingCreditSystem.Core.Repositories;
 using BankingCreditSystem.Domain.Entities;
 
 namespace BankingCreditSystem.Application.Features.CorporateCustomers.Profiles;

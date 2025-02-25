@@ -1,8 +1,6 @@
-using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
-
-namespace BankingCreditSystem.Core.Repositories;
+using System.Linq.Expressions;
 
 public class EfRepositoryBase<TEntity, TId, TContext> : IAsyncRepository<TEntity, TId>
     where TEntity : Entity<TId>
@@ -29,10 +27,10 @@ public class EfRepositoryBase<TEntity, TId, TContext> : IAsyncRepository<TEntity
         
         if (include != null)
             queryable = include(queryable);
-            
+        
         if (!withDeleted)
-            queryable = queryable.Where(e => e.DeletedDate == null);
-            
+            queryable = queryable.Where(x => x.DeletedDate == null);
+        
         return await queryable.FirstOrDefaultAsync(predicate, cancellationToken);
     }
 
@@ -50,27 +48,30 @@ public class EfRepositoryBase<TEntity, TId, TContext> : IAsyncRepository<TEntity
         
         if (!enableTracking)
             queryable = queryable.AsNoTracking();
-            
+        
         if (include != null)
             queryable = include(queryable);
-            
+        
         if (!withDeleted)
-            queryable = queryable.Where(e => e.DeletedDate == null);
-            
+            queryable = queryable.Where(x => x.DeletedDate == null);
+        
         if (predicate != null)
             queryable = queryable.Where(predicate);
-            
+        
         if (orderBy != null)
             queryable = orderBy(queryable);
 
-        var items = await queryable
-            .Skip(index * size)
-            .Take(size)
-            .ToListAsync(cancellationToken);
-            
         var totalItems = await queryable.CountAsync(cancellationToken);
+        var items = await queryable.Skip(index * size).Take(size).ToListAsync(cancellationToken);
 
-        return new Paginate<TEntity>(items, totalItems, new PaginationParams { PageNumber = index + 1, PageSize = size });
+        return new Paginate<TEntity>
+        {
+            Items = items,
+            PageNumber = index + 1,
+            PageSize = size,
+            TotalItems = totalItems,
+            TotalPages = (int)Math.Ceiling(totalItems / (double)size)
+        };
     }
 
     public async Task<bool> AnyAsync(
@@ -83,26 +84,26 @@ public class EfRepositoryBase<TEntity, TId, TContext> : IAsyncRepository<TEntity
         
         if (!enableTracking)
             queryable = queryable.AsNoTracking();
-            
+        
         if (!withDeleted)
-            queryable = queryable.Where(e => e.DeletedDate == null);
-            
+            queryable = queryable.Where(x => x.DeletedDate == null);
+        
         if (predicate != null)
             queryable = queryable.Where(predicate);
-            
+        
         return await queryable.AnyAsync(cancellationToken);
     }
 
     public async Task<TEntity> AddAsync(TEntity entity, CancellationToken cancellationToken = default)
     {
-        await Context.AddAsync(entity, cancellationToken);
+        await Context.Set<TEntity>().AddAsync(entity, cancellationToken);
         await Context.SaveChangesAsync(cancellationToken);
         return entity;
     }
 
     public async Task<ICollection<TEntity>> AddRangeAsync(ICollection<TEntity> entities, CancellationToken cancellationToken = default)
     {
-        await Context.AddRangeAsync(entities, cancellationToken);
+        await Context.Set<TEntity>().AddRangeAsync(entities, cancellationToken);
         await Context.SaveChangesAsync(cancellationToken);
         return entities;
     }
@@ -110,7 +111,7 @@ public class EfRepositoryBase<TEntity, TId, TContext> : IAsyncRepository<TEntity
     public async Task<TEntity> UpdateAsync(TEntity entity, CancellationToken cancellationToken = default)
     {
         entity.UpdatedDate = DateTime.UtcNow;
-        Context.Update(entity);
+        Context.Set<TEntity>().Update(entity);
         await Context.SaveChangesAsync(cancellationToken);
         return entity;
     }
@@ -120,7 +121,7 @@ public class EfRepositoryBase<TEntity, TId, TContext> : IAsyncRepository<TEntity
         foreach (var entity in entities)
             entity.UpdatedDate = DateTime.UtcNow;
             
-        Context.UpdateRange(entities);
+        Context.Set<TEntity>().UpdateRange(entities);
         await Context.SaveChangesAsync(cancellationToken);
         return entities;
     }
@@ -130,11 +131,11 @@ public class EfRepositoryBase<TEntity, TId, TContext> : IAsyncRepository<TEntity
         if (!permanent)
         {
             entity.DeletedDate = DateTime.UtcNow;
-            Context.Update(entity);
+            Context.Set<TEntity>().Update(entity);
         }
         else
         {
-            Context.Remove(entity);
+            Context.Set<TEntity>().Remove(entity);
         }
         
         await Context.SaveChangesAsync(cancellationToken);
@@ -147,11 +148,11 @@ public class EfRepositoryBase<TEntity, TId, TContext> : IAsyncRepository<TEntity
         {
             foreach (var entity in entities)
                 entity.DeletedDate = DateTime.UtcNow;
-            Context.UpdateRange(entities);
+            Context.Set<TEntity>().UpdateRange(entities);
         }
         else
         {
-            Context.RemoveRange(entities);
+            Context.Set<TEntity>().RemoveRange(entities);
         }
         
         await Context.SaveChangesAsync(cancellationToken);

@@ -1,5 +1,3 @@
-using BankingCreditSystem.Core.Repositories;
-
 namespace BankingCreditSystem.Domain.Entities;
 
 public abstract class Customer : Entity<Guid>

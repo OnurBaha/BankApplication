@@ -1,3 +1,5 @@
+namespace BankingCreditSystem.Domain.Enums;
+
 public enum CustomerType
 {
     Individual = 1,

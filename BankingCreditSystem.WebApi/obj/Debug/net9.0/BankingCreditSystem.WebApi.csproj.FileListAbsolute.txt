@@ -152,4 +152,4 @@ C:\Users\kocon\source\repos\Cursor\BankApp\BankingCreditSystem.WebApi\bin\Debug\
 C:\Users\kocon\source\repos\Cursor\BankApp\BankingCreditSystem.WebApi\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\kocon\source\repos\Cursor\BankApp\BankingCreditSystem.WebApi\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\kocon\source\repos\Cursor\BankApp\BankingCreditSystem.WebApi\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\kocon\source\repos\Cursor\BankApp\BankingCreditSystem.WebApi\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\kocon\source\repos\Cursor\BankApp\BankingCreditSystem.WebApi\bin\Debug\net9.0\System.Linq.Dynamic.Core.dll

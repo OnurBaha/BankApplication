@@ -1,8 +1,5 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore.Query;
-using BankingCreditSystem.Core.Repositories;
-
-namespace BankingCreditSystem.Core.Repositories;
 
 public interface IAsyncRepository<TEntity, TId> where TEntity : Entity<TId>
 {

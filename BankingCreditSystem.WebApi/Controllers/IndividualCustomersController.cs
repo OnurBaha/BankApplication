@@ -4,7 +4,6 @@ using BankingCreditSystem.Application.Features.IndividualCustomers.Commands.Dele
 using BankingCreditSystem.Application.Features.IndividualCustomers.Dtos.Requests;
 using BankingCreditSystem.Application.Features.IndividualCustomers.Queries.GetById;
 using BankingCreditSystem.Application.Features.IndividualCustomers.Queries.GetList;
-using BankingCreditSystem.Core.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BankingCreditSystem.WebApi.Controllers;
