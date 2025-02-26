@@ -1,0 +1,171 @@
+[
+  {
+    "ContainingType": "BankingCreditSystem.WebApi.Controllers.CreditApplicationsController",
+    "Method": "Create",
+    "RelativePath": "api/CreditApplications",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createCreditApplicationCommand",
+        "Type": "BankingCreditSystem.Application.Features.CreditApplications.Commands.Create.CreateCreditApplicationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingCreditSystem.WebApi.Controllers.CreditApplicationsController",
+    "Method": "GetListByCustomer",
+    "RelativePath": "api/CreditApplications/customer/{customerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingCreditSystem.WebApi.Controllers.CreditTypesController",
+    "Method": "Create",
+    "RelativePath": "api/CreditTypes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createCreditTypeCommand",
+        "Type": "BankingCreditSystem.Application.Features.CreditTypes.Commands.Create.CreateCreditTypeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingCreditSystem.WebApi.Controllers.CreditTypesController",
+    "Method": "GetList",
+    "RelativePath": "api/CreditTypes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "customerType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingCreditSystem.WebApi.Controllers.IndividualCustomersController",
+    "Method": "Create",
+    "RelativePath": "api/IndividualCustomers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createIndividualCustomerRequest",
+        "Type": "BankingCreditSystem.Application.Features.IndividualCustomers.Dtos.Requests.CreateIndividualCustomerRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingCreditSystem.WebApi.Controllers.IndividualCustomersController",
+    "Method": "Update",
+    "RelativePath": "api/IndividualCustomers",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateIndividualCustomerRequest",
+        "Type": "BankingCreditSystem.Application.Features.IndividualCustomers.Dtos.Requests.UpdateIndividualCustomerRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingCreditSystem.WebApi.Controllers.IndividualCustomersController",
+    "Method": "GetList",
+    "RelativePath": "api/IndividualCustomers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingCreditSystem.WebApi.Controllers.IndividualCustomersController",
+    "Method": "Delete",
+    "RelativePath": "api/IndividualCustomers/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingCreditSystem.WebApi.Controllers.IndividualCustomersController",
+    "Method": "GetById",
+    "RelativePath": "api/IndividualCustomers/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

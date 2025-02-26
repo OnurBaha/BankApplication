@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kocon\\source\\repos\\zCursor\\BankApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kocon\\source\\repos\\zCursor\\BankApp\\BankingCreditSystem.Persistence\\Migrations\\20250226124620_mig2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BankingCreditSystem.Persistence\\Migrations\\20250226124620_mig2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{586ED051-74D4-4D52-9DD5-C83EAAAEAAC0}|BankingCreditSystem.Application\\BankingCreditSystem.Application.csproj|c:\\users\\kocon\\source\\repos\\zcursor\\bankapp\\bankingcreditsystem.application\\features\\credittypes\\queries\\getlist\\getlistcredittypequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{586ED051-74D4-4D52-9DD5-C83EAAAEAAC0}|BankingCreditSystem.Application\\BankingCreditSystem.Application.csproj|solutionrelative:bankingcreditsystem.application\\features\\credittypes\\queries\\getlist\\getlistcredittypequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E17C9B74-8C5F-4203-AE0F-D3CC5B1BB23B}|BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|c:\\users\\kocon\\source\\repos\\zcursor\\bankapp\\bankingcreditsystem.webapi\\controllers\\creditapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E17C9B74-8C5F-4203-AE0F-D3CC5B1BB23B}|BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|solutionrelative:bankingcreditsystem.webapi\\controllers\\creditapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E17C9B74-8C5F-4203-AE0F-D3CC5B1BB23B}|BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|c:\\users\\kocon\\source\\repos\\zcursor\\bankapp\\bankingcreditsystem.webapi\\controllers\\credittypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E17C9B74-8C5F-4203-AE0F-D3CC5B1BB23B}|BankingCreditSystem.WebApi\\BankingCreditSystem.WebApi.csproj|solutionrelative:bankingcreditsystem.webapi\\controllers\\credittypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{586ED051-74D4-4D52-9DD5-C83EAAAEAAC0}|BankingCreditSystem.Application\\BankingCreditSystem.Application.csproj|c:\\users\\kocon\\source\\repos\\zcursor\\bankapp\\bankingcreditsystem.application\\features\\credittypes\\dtos\\response\\credittyperesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{586ED051-74D4-4D52-9DD5-C83EAAAEAAC0}|BankingCreditSystem.Application\\BankingCreditSystem.Application.csproj|solutionrelative:bankingcreditsystem.application\\features\\credittypes\\dtos\\response\\credittyperesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{586ED051-74D4-4D52-9DD5-C83EAAAEAAC0}|BankingCreditSystem.Application\\BankingCreditSystem.Application.csproj|c:\\users\\kocon\\source\\repos\\zcursor\\bankapp\\bankingcreditsystem.application\\features\\credittypes\\dtos\\request\\createcredittyperequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{586ED051-74D4-4D52-9DD5-C83EAAAEAAC0}|BankingCreditSystem.Application\\BankingCreditSystem.Application.csproj|solutionrelative:bankingcreditsystem.application\\features\\credittypes\\dtos\\request\\createcredittyperequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250226124620_mig2.cs",
+              "DocumentMoniker": "C:\\Users\\kocon\\source\\repos\\zCursor\\BankApp\\BankingCreditSystem.Persistence\\Migrations\\20250226124620_mig2.cs",
+              "RelativeDocumentMoniker": "BankingCreditSystem.Persistence\\Migrations\\20250226124620_mig2.cs",
+              "ToolTip": "C:\\Users\\kocon\\source\\repos\\zCursor\\BankApp\\BankingCreditSystem.Persistence\\Migrations\\20250226124620_mig2.cs",
+              "RelativeToolTip": "BankingCreditSystem.Persistence\\Migrations\\20250226124620_mig2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T12:46:21.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreditApplicationsController.cs",
+              "DocumentMoniker": "C:\\Users\\kocon\\source\\repos\\zCursor\\BankApp\\BankingCreditSystem.WebApi\\Controllers\\CreditApplicationsController.cs",
+              "RelativeDocumentMoniker": "BankingCreditSystem.WebApi\\Controllers\\CreditApplicationsController.cs",
+              "ToolTip": "C:\\Users\\kocon\\source\\repos\\zCursor\\BankApp\\BankingCreditSystem.WebApi\\Controllers\\CreditApplicationsController.cs",
+              "RelativeToolTip": "BankingCreditSystem.WebApi\\Controllers\\CreditApplicationsController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T14:50:21.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetListCreditTypeQuery.cs",
+              "DocumentMoniker": "C:\\Users\\kocon\\source\\repos\\zCursor\\BankApp\\BankingCreditSystem.Application\\Features\\CreditTypes\\Queries\\GetList\\GetListCreditTypeQuery.cs",
+              "RelativeDocumentMoniker": "BankingCreditSystem.Application\\Features\\CreditTypes\\Queries\\GetList\\GetListCreditTypeQuery.cs",
+              "ToolTip": "C:\\Users\\kocon\\source\\repos\\zCursor\\BankApp\\BankingCreditSystem.Application\\Features\\CreditTypes\\Queries\\GetList\\GetListCreditTypeQuery.cs",
+              "RelativeToolTip": "BankingCreditSystem.Application\\Features\\CreditTypes\\Queries\\GetList\\GetListCreditTypeQuery.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T14:50:16.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreditTypeResponse.cs",
+              "DocumentMoniker": "C:\\Users\\kocon\\source\\repos\\zCursor\\BankApp\\BankingCreditSystem.Application\\Features\\CreditTypes\\Dtos\\Response\\CreditTypeResponse.cs",
+              "RelativeDocumentMoniker": "BankingCreditSystem.Application\\Features\\CreditTypes\\Dtos\\Response\\CreditTypeResponse.cs",
+              "ToolTip": "C:\\Users\\kocon\\source\\repos\\zCursor\\BankApp\\BankingCreditSystem.Application\\Features\\CreditTypes\\Dtos\\Response\\CreditTypeResponse.cs",
+              "RelativeToolTip": "BankingCreditSystem.Application\\Features\\CreditTypes\\Dtos\\Response\\CreditTypeResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T14:50:11.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateCreditTypeRequest.cs",
+              "DocumentMoniker": "C:\\Users\\kocon\\source\\repos\\zCursor\\BankApp\\BankingCreditSystem.Application\\Features\\CreditTypes\\Dtos\\Request\\CreateCreditTypeRequest.cs",
+              "RelativeDocumentMoniker": "BankingCreditSystem.Application\\Features\\CreditTypes\\Dtos\\Request\\CreateCreditTypeRequest.cs",
+              "ToolTip": "C:\\Users\\kocon\\source\\repos\\zCursor\\BankApp\\BankingCreditSystem.Application\\Features\\CreditTypes\\Dtos\\Request\\CreateCreditTypeRequest.cs",
+              "RelativeToolTip": "BankingCreditSystem.Application\\Features\\CreditTypes\\Dtos\\Request\\CreateCreditTypeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T14:50:06.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreditTypesController.cs",
+              "DocumentMoniker": "C:\\Users\\kocon\\source\\repos\\zCursor\\BankApp\\BankingCreditSystem.WebApi\\Controllers\\CreditTypesController.cs",
+              "RelativeDocumentMoniker": "BankingCreditSystem.WebApi\\Controllers\\CreditTypesController.cs",
+              "ToolTip": "C:\\Users\\kocon\\source\\repos\\zCursor\\BankApp\\BankingCreditSystem.WebApi\\Controllers\\CreditTypesController.cs",
+              "RelativeToolTip": "BankingCreditSystem.WebApi\\Controllers\\CreditTypesController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowBwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T14:50:03.743Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
