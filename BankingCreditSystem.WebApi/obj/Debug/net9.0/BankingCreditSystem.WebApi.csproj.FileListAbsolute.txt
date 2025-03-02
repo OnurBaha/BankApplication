@@ -308,3 +308,4 @@ C:\Users\kocon\source\repos\zCursor\BankApp\BankingCreditSystem.WebApi\obj\Debug
 C:\Users\kocon\source\repos\zCursor\BankApp\BankingCreditSystem.WebApi\obj\Debug\net9.0\BankingCreditSystem.WebApi.pdb
 C:\Users\kocon\source\repos\zCursor\BankApp\BankingCreditSystem.WebApi\obj\Debug\net9.0\BankingCreditSystem.WebApi.genruntimeconfig.cache
 C:\Users\kocon\source\repos\zCursor\BankApp\BankingCreditSystem.WebApi\obj\Debug\net9.0\ref\BankingCreditSystem.WebApi.dll
+C:\Users\kocon\source\repos\zCursor\BankApp\BankingCreditSystem.WebApi\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

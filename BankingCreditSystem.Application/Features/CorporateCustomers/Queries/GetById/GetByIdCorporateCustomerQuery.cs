@@ -3,12 +3,16 @@ using MediatR;
 using BankingCreditSystem.Application.Features.CorporateCustomers.Dtos.Responses;
 using BankingCreditSystem.Application.Features.CorporateCustomers.Rules;
 using BankingCreditSystem.Application.Services.Repositories;
+using BankingCreditSystem.Core.Application.Authorization;
 
 namespace BankingCreditSystem.Application.Features.CorporateCustomers.Queries.GetById;
 
-public class GetByIdCorporateCustomerQuery : IRequest<CorporateCustomerResponse>
+public class GetByIdCorporateCustomerQuery : IRequest<CorporateCustomerResponse>, ISecuredRequest, ICustomerSpecificRequest
 {
     public Guid Id { get; set; }
+    public Guid CustomerId => Id;
+
+    public string[] Roles => new[] { "Customer", "BankStaff" };
 
     public class GetByIdCorporateCustomerQueryHandler : IRequestHandler<GetByIdCorporateCustomerQuery, CorporateCustomerResponse>
     {

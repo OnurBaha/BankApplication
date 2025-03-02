@@ -2,6 +2,7 @@ using BankingCreditSystem.Domain.Entities;
 using BankingCreditSystem.Persistence.EntityConfigurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using BankingCreditSystem.Core.Security.Entities;
 
 namespace BankingCreditSystem.Persistence.Contexts;
 
@@ -14,6 +15,7 @@ public class BaseDbContext : DbContext
     public DbSet<CorporateCustomer> CorporateCustomers { get; set; }
     public DbSet<CreditApplication> CreditApplications { get; set; }
     public DbSet<CreditType> CreditTypes { get; set; }
+    public DbSet<User> Users { get; set; }
 
     public BaseDbContext(DbContextOptions dbContextOptions, IConfiguration configuration) : base(dbContextOptions)
     {
